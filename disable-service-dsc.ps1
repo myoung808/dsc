@@ -8,8 +8,8 @@ $ConfigurationData = @{
            Services = @(
                @{ Name = "AxInstSV"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "bthserv"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "CDPUserSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "PimIndexMaintenanceSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
+#               @{ Name = "CDPUserSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
+#               @{ Name = "PimIndexMaintenanceSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "dmwappushservice"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "MapsBroker"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "lfsvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
@@ -32,11 +32,11 @@ $ConfigurationData = @{
                @{ Name = "ScDeviceEnum"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "SSDPSRV"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "WiaRpc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               #@{ Name = "OneSyncSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
+               #@{ Name = "OneSyncSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable; Not in Windows Server 2019
                @{ Name = "TabletInputService"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "upnphost"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "UserDataSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "UnistoreSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
+#               @{ Name = "UserDataSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
+#               @{ Name = "UnistoreSvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "WalletService"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "Audiosrv"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "AudioEndpointBuilder"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
@@ -44,10 +44,10 @@ $ConfigurationData = @{
                @{ Name = "stisvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "wisvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
                @{ Name = "icssvc"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "WpnService"; StartupType = "Disabled"; State = "Stopped" }, # OK to disable
-               @{ Name = "WpnUserService"; StartupType = "Disabled"; State = "Stopped" } # OK to disable
-               #@{ Name = "XblAuthManager"; StartupType = "Disabled"; State = "Stopped" }, # Should disable
-               #@{ Name = "XblGameSave"; StartupType = "Disabled"; State = "Stopped" } # Should disable
+               @{ Name = "WpnService"; StartupType = "Disabled"; State = "Stopped" } # OK to disable
+#               @{ Name = "WpnUserService"; StartupType = "Disabled"; State = "Stopped" } # OK to disable
+               #@{ Name = "XblAuthManager"; StartupType = "Disabled"; State = "Stopped" }, # Should disable; Not in Windows Server 2019
+               #@{ Name = "XblGameSave"; StartupType = "Disabled"; State = "Stopped" } # Should disable; Not in Windows Server 2019
            )
         }
     )
