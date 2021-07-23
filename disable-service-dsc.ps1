@@ -62,7 +62,7 @@ Configuration disable-service {
             service $s.Name
             {
                 Name = $s.Name;
-                StartupType = $s.StartType;
+                StartupType = $s.StartupType;
                 State = $s.State
 
             }
